@@ -86,7 +86,5 @@ function updateTimerFace({ days, hours, minutes, seconds }) {
 
 // Функция для форматирования значений таймера
 function addLeadingZero(value) {
-  if ((String(value).length = 1)) {
-    return String(value).padStart(2, '0');
-  }
+  return String(value).padStart(2, '0');
 }
